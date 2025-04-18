@@ -1,0 +1,20 @@
+:root {
+    --font-sans-serif: 'Heebo', Helvetica, sans-serif;
+    --font-sans-serif-alt: 'Metropolis', Helvetica, sans-serif;
+    --font-serif: 'Calisto', Georgia, serif;
+    --black: #1c1c1c;
+    --white: #f8f8f8;
+    --orange: #d46300;
+}
+
+html {
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: var(--font-sans-serif);
+
+}
