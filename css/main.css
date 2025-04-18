@@ -1,7 +1,39 @@
+@font-face {
+    font-family: 'Metropolis Light';
+    src: url('/fonts/Metropolis-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Metropolis SemiBold';
+    src: url('/fonts/Metropolis-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Calisto MT Bold';
+    src: url('/fonts/calisto-mt-bolt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heebo';
+    src: url('/fonts/Heebo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heebo';
+    src: url('/fonts/Heebo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 :root {
     --font-sans-serif: 'Heebo', Helvetica, sans-serif;
-    --font-sans-serif-alt: 'Metropolis', Helvetica, sans-serif;
-    --font-serif: 'Calisto', Georgia, serif;
+    --font-sans-serif-alt-bold: 'Metropolis SemiBold', Helvetica, sans-serif;
+    --font-sans-serif-alt: 'Metropolis Light', Helvetica, sans-serif;
+    --font-serif: 'Calisto MT Bold', Georgia, serif;
     --black: #1c1c1c;
     --white: #f8f8f8;
     --orange: #d46300;
@@ -17,4 +49,20 @@ html {
 body {
     font-family: var(--font-sans-serif);
 
+}
+
+img {
+    display: block;
+}
+
+/* Components */
+.component img {
+    max-width: initial;
+}
+.component__image {
+    border: 1px solid #ccc;
+    overflow-x: auto;
+}
+.component__code {
+    border: 1px solid #ccc;
 }
