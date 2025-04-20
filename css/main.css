@@ -75,11 +75,13 @@ img {
 .component__image {
     border: 1px solid var(--gray);
     overflow-x: auto;
+    background-color: var(--white);
 }
 .component__code {
     border-bottom: 1px solid var(--gray);
     border-left: 1px solid var(--gray);
     border-right: 1px solid var(--gray);
+    background-color: var(--white);
 }
 .component__name {
     font-family: var(--font-sans-serif-alt);
@@ -94,4 +96,7 @@ img {
     padding: 0.25rem;
     background-color: var(--orange);
     color: var(--white);
+}
+.language-icon {
+    display: inline-block;
 }
