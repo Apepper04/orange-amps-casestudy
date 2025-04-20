@@ -100,3 +100,61 @@ img {
 .language-icon {
     display: inline-block;
 }
+
+.page-header--nav-bar{
+    background-color: #222;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .page-header--nav-bar-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-item {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  /* Modified to only remove divider after ORANGE LEARN */
+  .nav-item:not(.search):not(:nth-last-child(2))::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 23px;
+    width: 1px;
+    background-color: var(--white);
+  }
+  
+  .nav-item a {
+    font-family: var(--font-sans-serif);
+    color: white;
+    text-decoration: none;
+    padding: 15px 11px; /* Reduced horizontal padding only */
+    display: inline-block;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  
+  .nav-item.search {
+    margin-left: 10px;
+  }
+  
+  .search-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-search {
+    color: white;
+  }
