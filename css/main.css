@@ -53,6 +53,14 @@ body {
     padding-right: 1rem;
 }
 
+a {
+    color: var(--orange);
+}
+
+a:hover, a:focus {
+    color: var(--black);
+}
+
 img {
     display: block;
 }
