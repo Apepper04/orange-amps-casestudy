@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Metropolis Light';
-    src: url('/fonts/Metropolis-Light.otf') format('opentype');
+    font-family: 'Metropolis Thin';
+    src: url('/fonts/metropolis.thin.otf') format('opentype');
     font-weight: 300;
     font-style: normal; 
 }
@@ -32,7 +32,7 @@
 :root {
     --font-sans-serif: 'Heebo', Helvetica, sans-serif;
     --font-sans-serif-alt-bold: 'Metropolis SemiBold', Helvetica, sans-serif;
-    --font-sans-serif-alt: 'Metropolis Light', Helvetica, sans-serif;
+    --font-sans-serif-alt: 'Metropolis Thin', Helvetica, sans-serif;
     --font-serif: 'Calisto MT Bold', Georgia, serif;
     --black: #1c1c1c;
     --white: #f8f8f8;
@@ -305,7 +305,6 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -325,4 +324,22 @@ img {
 
 .news-section--image-container:hover .news-section--image-overlay {
     opacity: 1;
+}
+
+.news-section--h2 {
+    font-family: var(--font-sans-serif-alt);
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin: 8px;
+    
+}
+
+.news-section--h2:hover {
+    text-decoration: none;
+    color: #F7D2AD;
+    cursor: pointer;
 }
