@@ -106,25 +106,24 @@ img {
     background-color: #222;
     padding: 0;
     width: 100%;
-  }
-  
-  .page-header--nav-bar-items {
+}
+
+.page-header--nav-bar-items {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
-  }
-  
-  .nav-item {
+}
+
+.nav-item {
     padding: 0;
     margin: 0;
     position: relative;
-  }
-  
-  /* Modified to only remove divider after ORANGE LEARN */
-  .nav-item:not(.search):not(:nth-last-child(2))::after {
+}
+
+.nav-item:not(.search):not(:nth-last-child(2))::after {
     content: "";
     position: absolute;
     right: 0;
@@ -133,52 +132,52 @@ img {
     height: 23px;
     width: 1px;
     background-color: var(--white);
-  }
-  
-  .nav-item a {
+}
+
+.nav-item a {
     font-family: var(--font-sans-serif);
     color: white;
     text-decoration: none;
-    padding: 15px 11px; /* Reduced horizontal padding only */
+    padding: 15px 11px;
     display: inline-block;
     font-weight: 800;
     font-size: 16px;
     letter-spacing: 0.5px;
-  }
-  
-  .nav-item.search {
+}
+
+.nav-item.search {
     margin-left: 10px;
-  }
-  
-  .search-link {
+}
+
+.search-link {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .icon-search {
-    color: white;
-  }
+}
 
-  .hero-section--slideshow-dots {
+.icon-search {
+    color: white;
+}
+
+.hero-section--slideshow-dots {
     display: flex;
     gap: 2px;
     margin: 10px;
-  }
-  
-  .dot {
+}
+
+.dot {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     border: 2px solid var(--gray);
     cursor: pointer;
-  }
-  
-  .dot.active {
-    background-color: var(--gray);
-  }
+}
 
-  .hero-section--left-arrow {
+.dot.active {
+    background-color: var(--gray);
+}
+
+.hero-section--left-arrow {
     width: 35px;
     height: 60px;
     border: 2px solid var(--gray);
@@ -190,9 +189,9 @@ img {
     cursor: pointer;
     margin: 10px 2px;
     position: relative;
-  }
-  
-  .hero-section--left-arrow .arrow-icon {
+}
+
+.hero-section--left-arrow .arrow-icon {
     width: 15px;
     height: 15px;
     border-left: 2px solid var(--gray);
@@ -203,9 +202,9 @@ img {
     left: 50%;
     margin-left: -4px;
     margin-top: -6px;
-  }
+}
 
-  .hero-section--right-arrow {
+.hero-section--right-arrow {
     width: 35px;
     height: 60px;
     border: 2px solid var(--gray);
@@ -217,9 +216,9 @@ img {
     cursor: pointer;
     margin: 10px 2px;
     position: relative;
-  }
-  
-  .hero-section--right-arrow .arrow-icon {
+}
+
+.hero-section--right-arrow .arrow-icon {
     width: 15px;
     height: 15px;
     border-right: 2px solid var(--gray);
@@ -230,55 +229,100 @@ img {
     left: 50%;
     margin-left: -11px;
     margin-top: -6px;
-  }
+}
 
-  .hero-section--image-hover {
+.hero-section--image-hover {
     position: relative;
     display: inline-block;
-  }
-  
-  .hero-section--image-hover-arrow {
+}
+
+.hero-section--image-hover-arrow {
     width: 20px;
     height: 20px;
     margin: 0 5px;
-  }
-  
-  .hero-section--image-hover:hover .hero-section--image-hover-arrow {
+}
+
+.hero-section--image-hover:hover .hero-section--image-hover-arrow {
     animation: rotate-back 0.35s ease;
-  }
-  
-  @keyframes rotate-back {
+}
+
+@keyframes rotate-back {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(45deg); }
     100% { transform: rotate(0deg); }
-  }
-
-  .hero-section--image-container {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-  }
-  
-.hero-section--image {
-  display: block;
 }
 
 .hero-section--image-container {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hero-section--image {
+    display: block;
+}
+
+.hero-section--image-container {
+    position: relative;
+    display: inline-block;
 }
 
 .hero-section--image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--orange);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--orange);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .hero-section--image-container:hover .hero-section--image-overlay {
-  opacity: 0.6;
+    opacity: 0.6;
+}
+
+.news-section--image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.news-section--image {
+    display: block;
+}
+
+.news-section--image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.news-section--image-overlay h2 {
+    font-family: var(--font-sans-serif-alt-bold);
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    margin: 0 0 10px 0;
+}
+
+.news-section--image-overlay p {
+    font-family: var(--font-sans-serif);
+    font-size: 12px;
+    margin: 0;
+}
+
+.news-section--image-container:hover .news-section--image-overlay {
+    opacity: 1;
 }
