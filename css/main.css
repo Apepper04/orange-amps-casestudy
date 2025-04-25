@@ -82,6 +82,7 @@ img {
     border-left: 1px solid var(--gray);
     border-right: 1px solid var(--gray);
     background-color: var(--white);
+    overflow-x: auto;
 }
 .component__name {
     font-family: var(--font-sans-serif-alt);
@@ -157,4 +158,76 @@ img {
   
   .icon-search {
     color: white;
+  }
+
+  .hero-section--slideshow-dots {
+    display: flex;
+    gap: 2px;
+    margin: 10px;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: var(--gray);
+  }
+
+  .hero-section--left-arrow {
+    width: 35px;
+    height: 60px;
+    border: 2px solid var(--gray);
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px 2px;
+    position: relative;
+  }
+  
+  .hero-section--left-arrow .arrow-icon {
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid var(--gray);
+    border-bottom: 2px solid var(--gray);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -6px;
+  }
+
+  .hero-section--right-arrow {
+    width: 35px;
+    height: 60px;
+    border: 2px solid var(--gray);
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px 2px;
+    position: relative;
+  }
+  
+  .hero-section--right-arrow .arrow-icon {
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid var(--gray);
+    border-top: 2px solid var(--gray);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -6px;
   }
