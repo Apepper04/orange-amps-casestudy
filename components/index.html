@@ -133,42 +133,39 @@
         </div>
     </article>
 
-    <article class="component">
-        <h3 class="component__name">.hero-section--image</h3>
-        <div class="component__image">
-            <img 
-                srcset="images/hero-section--image.png 2x"
-                src="images/hero-section--image.png" alt="Hero Section Image"
-            />
-        </div>
-        <div class="component__code">
-            Code Goes Here
-        </div>
-    </article>
-
-    <article class="component">
-        <h3 class="component__name">.hero-section--image-hover</h3>
-        <div class="component__image">
-            <img 
-                srcset="images/hero-section--image-hover.png 2x"
-                src="images/hero-section--image-hover.png" alt="Hero Section Image Hover"
-            />
-        </div>
-        <div class="component__code">
-            Code Goes Here
-        </div>
-    </article>
+<article class="component">
+  <h3 class="component__name">.hero-section--image</h3>
+  <div class="component__image">
+    <img
+      srcset="images/hero-section--image.png 2x"
+      src="images/hero-section--image.png" alt="Hero Section Image"
+    />
+  </div>
+  <div class="component__code">
+    <div class="hero-section--image-container">
+      <img
+        class="hero-section--image"
+        srcset="images/hero-section--image.png 2x"
+        src="images/hero-section--image.png"
+        alt="Hero Section Image with Hover Effect"
+      >
+      <div class="hero-section--image-overlay"></div>
+    </div>
+  </div>
+</article>
 
     <article class="component">
         <h3 class="component__name">.hero-section--image-hover-arrow</h3>
         <div class="component__image">
-            <img 
-                srcset="images/hero-section--image-hover-arrow.png 2x"
-                src="images/hero-section--image-hover-arrow.png" alt="Hero Section Image Hover Arrow"
-            />
+          <img 
+            srcset="images/hero-section--image-hover-arrow.png 2x"
+            src="images/hero-section--image-hover-arrow.png" alt="Hero Section Image Hover Arrow"
+          />
         </div>
         <div class="component__code">
-            Code Goes Here
+          <div class="hero-section--image-hover">
+            <img class="hero-section--image-hover-arrow" src="images/arrow.svg" alt="Arrow">
+          </div>
         </div>
     </article>
 
