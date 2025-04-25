@@ -24,9 +24,6 @@
                 src="images/page-header.png" alt="Page Header Image"
             />
         </div>
-        <div class="component__code">
-            Code Goes Here
-        </div>
     </article>
 
     <article class="component">
@@ -128,31 +125,28 @@
                 src="images/hero-section.png" alt="Hero Section"
             />
         </div>
-        <div class="component__code">
-
-        </div>
     </article>
 
-<article class="component">
-  <h3 class="component__name">.hero-section--image  (with hover effect)</h3>
-  <div class="component__image">
-    <img
-      srcset="images/hero-section--image.png 2x"
-      src="images/hero-section--image.png" alt="Hero Section Image"
-    />
-  </div>
-  <div class="component__code">
-    <div class="hero-section--image-container">
-      <img
-        class="hero-section--image"
+    <article class="component">
+    <h3 class="component__name">.hero-section--image  (with hover effect)</h3>
+    <div class="component__image">
+        <img
         srcset="images/hero-section--image.png 2x"
-        src="images/hero-section--image.png"
-        alt="Hero Section Image with Hover Effect"
-      >
-      <div class="hero-section--image-overlay"></div>
+        src="images/hero-section--image.png" alt="Hero Section Image"
+        />
     </div>
-  </div>
-</article>
+    <div class="component__code">
+        <div class="hero-section--image-container">
+        <img
+            class="hero-section--image"
+            srcset="images/hero-section--image.png 2x"
+            src="images/hero-section--image.png"
+            alt="Hero Section Image with Hover Effect"
+        >
+        <div class="hero-section--image-overlay"></div>
+        </div>
+    </div>
+    </article>
 
     <article class="component">
         <h3 class="component__name">.hero-section--image-hover-arrow</h3>
@@ -227,9 +221,6 @@
                 src="images/news-section.png" alt="News Section"
             />
         </div>
-        <div class="component__code">
-
-        </div>
     </article>
 
     <article class="component">
@@ -292,9 +283,6 @@
                 src="images/featured-gear-section.png" alt="Featured Gear Section"
             />
         </div>
-        <div class="component__code">
-
-        </div>
     </article>
 
     <article class="component">
@@ -356,9 +344,6 @@
                 src="images/latest-gear-section.png" alt="Latest Gear Section"
             />
         </div>
-        <div class="component__code">
-            Code Goes Here
-        </div>
     </article>
 
     <article class="component">
@@ -407,11 +392,8 @@
                 src="images/footer.png" alt="Footer"
             />
         </div>
-        <div class="component__code">
-            
-        </div>
     </article>
-
+    
     <article class="component">
         <h3 class="component__name">.footer--divider-arrow</h3>
         <div class="component__image">
@@ -421,10 +403,12 @@
             />
         </div>
         <div class="component__code">
-            Code Goes Here
+            <div class="footer-arrow-container" >
+                <div class="footer--divider-arrow"></div>
+            </div>
         </div>
     </article>
-
+    
     <article class="component">
         <h3 class="component__name">.footer--link-list</h3>
         <div class="component__image">
@@ -434,10 +418,17 @@
             />
         </div>
         <div class="component__code">
-            Code Goes Here
+            <div class="footer-list-example">
+                <h3 class="footer-list-heading">HELP WITH MY GEAR</h3>
+                <ul class="footer--link-list">
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Register Gear</a></li>
+                    <li><a href="#">Gear Manuals</a></li>
+                </ul>
+            </div>
         </div>
     </article>
-
+    
     <article class="component">
         <h3 class="component__name">.footer--newsletter-sign-up</h3>
         <div class="component__image">
@@ -447,10 +438,17 @@
             />
         </div>
         <div class="component__code">
-            Code Goes Here
+            <div class="newsletter-example">
+                <div class="newsletter">
+                    <h3>Join our newsletter</h3>
+                    <input type="email" class="email-input">
+                    <p>Email confirmation is required</p>
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </div>
         </div>
     </article>
-
+    
     <article class="component">
         <h3 class="component__name">.footer--copyright-and-terms</h3>
         <div class="component__image">
@@ -460,10 +458,15 @@
             />
         </div>
         <div class="component__code">
-            Code Goes Here
+            <div class="footer--copyright-and-terms">
+                <div class="footer--copyright-terms-content">
+                    <p class="footer--copyright">© Orange Amps | Products can change without notice</p>
+                    <p class="footer--terms">Cookies & Terms</p>
+                </div>
+            </div>
         </div>
     </article>
-
+    
     <article class="component">
         <h3 class="component__name">.footer--copyright</h3>
         <div class="component__image">
@@ -473,10 +476,10 @@
             />
         </div>
         <div class="component__code">
-            Code Goes Here
+            <p class="footer--copyright">© Orange Amps | Products can change without notice</p>
         </div>
     </article>
-
+    
     <article class="component">
         <h3 class="component__name">.footer--terms</h3>
         <div class="component__image">
@@ -486,7 +489,7 @@
             />
         </div>
         <div class="component__code">
-            Code Goes Here
+            <p class="footer--terms">Cookies & Terms</p>
         </div>
     </article>
 
@@ -501,7 +504,9 @@
             />
         </div>
         <div class="component__code">
-            Code Goes Here
+            <button class="universal--chat-button">
+                <span class="chat-button-text">Page Issue?</span>
+            </button>
         </div>
     </article>
 
@@ -514,7 +519,9 @@
             />
         </div>
         <div class="component__code">
-            Code Goes Here
+            <button class="universal--back-to-top-button">
+                <div class="back-to-top-arrow"></div>
+            </button>
         </div>
     </article>
 
