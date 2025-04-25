@@ -231,12 +231,12 @@ img {
     margin-top: -6px;
 }
 
-.hero-section--image-hover {
+.hero-section--image-hover, .featured-gear-section--image-hover {
     position: relative;
     display: inline-block;
 }
 
-.hero-section--image-hover-arrow {
+.hero-section--image-hover-arrow, .featured-gear-section--image-hover-arrow {
     width: 20px;
     height: 20px;
     margin: 0 5px;
@@ -246,28 +246,32 @@ img {
     animation: rotate-back 0.35s ease;
 }
 
+.featured-gear-section--image-hover:hover .featured-gear-section--image-hover-arrow {
+    animation: rotate-back 0.35s ease;
+}
+
 @keyframes rotate-back {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(45deg); }
     100% { transform: rotate(0deg); }
 }
 
-.hero-section--image-container {
+.hero-section--image-container, .featured-gear-section--image-container {
     position: relative;
     display: inline-block;
     overflow: hidden;
 }
 
-.hero-section--image {
+.hero-section--image, .featured-gear-section--image {
     display: block;
 }
 
-.hero-section--image-container {
+.hero-section--image-container, .featured-gear-section--image-container {
     position: relative;
     display: inline-block;
 }
 
-.hero-section--image-overlay {
+.hero-section--image-overlay, .featured-gear-section--image-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -279,6 +283,10 @@ img {
 }
 
 .hero-section--image-container:hover .hero-section--image-overlay {
+    opacity: 0.6;
+}
+
+.featured-gear-section--image-container:hover .featured-gear-section--image-overlay {
     opacity: 0.6;
 }
 
@@ -339,6 +347,29 @@ img {
 }
 
 .news-section--h2:hover {
+    text-decoration: none;
+    color: #F7D2AD;
+    cursor: pointer;
+}
+
+.news-section--divider {
+    height: 2px;
+    background-color: var(--orange);
+    width: 85%;
+    margin: 10px;
+  }
+
+.featured-gear-section--h2, .latest-gear-section--h2 {
+    font-family: var(--font-sans-serif-alt);
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin: 8px;
+}
+.featured-gear-section--h2:hover {
     text-decoration: none;
     color: #F7D2AD;
     cursor: pointer;
