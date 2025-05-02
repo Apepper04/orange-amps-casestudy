@@ -347,3 +347,76 @@
   .news-section--divider {
     margin: 0 auto;
   }
+
+  /* Featured Gear Section */
+.featured-gear-section {
+    padding: 40px 0;
+    background-color: white;
+  }
+  
+  /* Using your original title styling - just adding positioning */
+  .featured-gear-section--h2 {
+    text-align: center;
+    margin: 0 0 30px 0;
+    display: inline-block;
+  }
+  
+  /* Featured gear stack layout */
+  .featured-gear-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 40px;
+  }
+  
+  .featured-gear-item {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image container maintain aspect ratio */
+  .featured-gear-section--image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .featured-gear-section--image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Hover effects */
+  .featured-gear-section--image-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+  
+  .featured-gear-section--image-container:hover .featured-gear-section--image-overlay {
+    opacity: 0.6;
+  }
+  
+  .featured-gear-section--image-container:hover .featured-gear-section--image-hover {
+    opacity: 1;
+  }
+  
+  .featured-gear-section--image-hover-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .featured-gear-section--image-container:hover .featured-gear-section--image-hover-arrow {
+    animation: rotate-back 0.35s ease;
+  }
+  
+  /* Center the title */
+  .featured-gear-section a {
+    display: block;
+    text-align: center;
+  }
