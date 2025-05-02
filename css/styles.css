@@ -1,12 +1,16 @@
 /* HEADER LAYOUT */
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .page-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 10px 0;
     position: relative;
 }
 
@@ -19,15 +23,14 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    height: 40px; /* Fixed height for the top bar */
+    height: 30px;
 }
 
 /* Social Icons (left aligned) */
 .page-header--social-icons {
     display: flex;
-    gap: 12px;
+    gap: 8px;
     align-items: center;
-    padding-top: 8px;
 }
 
 .page-header--social-icons a {
@@ -45,18 +48,26 @@
     display: flex;
     gap: 8px;
     align-items: center;
-    padding-top: 8px;
 }
 
 .language-icon {
     width: 18px;
     height: auto;
-    opacity: 0.8;
-    transition: opacity 0.3s;
 }
 
 .language-icon:hover {
     opacity: 1;
+}
+
+.page-header--middle-container {
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 /* Center Logo */
@@ -64,31 +75,24 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px 0 15px 0;
 }
 
 .page-header--wordmark img {
-    max-width: 200px;
+    max-width: 190px;
     height: auto;
 }
 
 /* Cart Icon */
-.page-header--cart-icon {
-    position: absolute;
-    top: 65px;
-    right: 30px;
-}
 
 .page-header--cart-icon a {
     color: black;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 /* Navigation Bar */
 .page-header--nav-bar {
     width: 100%;
     background-color: #1c1c1c;
-    margin-top: 10px;
 }
 
 .page-header--nav-bar-items {
@@ -111,20 +115,14 @@
     text-decoration: none;
     padding: 15px 12px;
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-    letter-spacing: 0.5px;
     text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-.nav-item a:hover {
-    color: var(--orange);
 }
 
 .nav-item.search {
-    margin-left: auto; /* Pushes search to far right */
-    padding-right: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .icon-search {
