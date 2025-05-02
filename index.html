@@ -3,11 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Orange Amps</title>
+    <title>Orange Amps</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/entypo.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Page Header -->
+    <header class="page-header">
+        <!-- Social Media Icons -->
+        <div class="page-header--social-icons">
+            <a href="#"><span class="icon-youtube-play"></span></a>
+            <a href="#"><span class="icon-x-1"></span></a>
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-instagram"></span></a>
+        </div>
+        
+        <!-- Language Icons -->
+        <div class="page-header--language-icons">
+            <a href="#"><img class="language-icon" src="components/images/en.svg" alt="English Language Icon"></a>
+            <a href="#"><img class="language-icon" src="components/images/ja.svg" alt="Japanese Language Icon"></a>
+            <a href="#"><img class="language-icon" src="components/images/es.svg" alt="Spanish Language Icon"></a>
+            <a href="#"><img class="language-icon" src="components/images/fr.svg" alt="French Language Icon"></a>
+        </div>
+        
+        <!-- Orange Wordmark -->
+        <div class="page-header--wordmark">
+            <a href="/"><img src="components/images/orange-wordmark.png" alt="Orange Wordmark"></a>
+        </div>
+        
+        <!-- Cart Icon -->
+        <div class="page-header--cart-icon">
+            <a href="#"><span class="icon-basket-1"></span></a>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="page-header--nav-bar">
+            <ul class="page-header--nav-bar-items">
+                <li class="nav-item"><a href="/gear">GEAR</a></li>
+                <li class="nav-item"><a href="/artists">ARTISTS</a></li>
+                <li class="nav-item"><a href="/history">HISTORY</a></li>
+                <li class="nav-item"><a href="/news">NEWS</a></li>
+                <li class="nav-item"><a href="/support">SUPPORT</a></li>
+                <li class="nav-item"><a href="/find-dealer">FIND DEALER</a></li>
+                <li class="nav-item"><a href="/store">STORE</a></li>
+                <li class="nav-item"><a href="/orange-essentials">ORANGE ESSENTIALS</a></li>
+                <li class="nav-item"><a href="/orange-learn">ORANGE LEARN</a></li>
+                <li class="nav-item search">
+                    <a href="/search" class="search-link">
+                        <i class="icon-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1> Home Page Goes Here Eventually<h1>
-    
+    <!-- Hero Slideshow Section -->
+    <section class="hero-section">
+        <div class="hero-section--slideshow">
+            <div class="slideshow-container">
+                <div class="hero-slide fade active">
+                    <div class="hero-section--image-container">
+                        <img class="hero-section--image" src="images/slideshow1.jpg" alt="Orange Amps Baby Range">
+                        <div class="hero-section--image-overlay"></div>
+                        <div class="hero-section--image-hover">
+                            <img class="hero-section--image-hover-arrow" src="components/images/arrow.svg" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-slide fade">
+                    <div class="hero-section--image-container">
+                        <img class="hero-section--image" src="images/slideshow2.jpg" alt="Orange Amps Slideshow 2">
+                        <div class="hero-section--image-overlay"></div>
+                        <div class="hero-section--image-hover">
+                            <img class="hero-section--image-hover-arrow" src="components/images/arrow.svg" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-slide fade">
+                    <div class="hero-section--image-container">
+                        <img class="hero-section--image" src="images/slideshow3.jpg" alt="Orange Amps Slideshow 3">
+                        <div class="hero-section--image-overlay"></div>
+                        <div class="hero-section--image-hover">
+                            <img class="hero-section--image-hover-arrow" src="components/images/arrow.svg" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-slide fade">
+                    <div class="hero-section--image-container">
+                        <img class="hero-section--image" src="images/slideshow4.jpg" alt="Orange Amps Slideshow 4">
+                        <div class="hero-section--image-overlay"></div>
+                        <div class="hero-section--image-hover">
+                            <img class="hero-section--image-hover-arrow" src="components/images/arrow.svg" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Left and right navigation buttons -->
+                <button class="hero-section--left-arrow" onclick="changeSlide(-1)">
+                    <span class="arrow-icon"></span>
+                </button>
+                <button class="hero-section--right-arrow" onclick="changeSlide(1)">
+                    <span class="arrow-icon"></span>
+                </button>
+                
+                <!-- Slideshow dots - now positioned inside the slideshow container -->
+                <div class="hero-section--slideshow-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        let slideTimer;
+        const slides = document.getElementsByClassName("hero-slide");
+        const dots = document.getElementsByClassName("dot");
+        
+        // Start the slideshow
+        showSlides();
+        
+        function showSlides() {
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                dots[i].classList.remove("active");
+            }
+            
+            // Move to next slide
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            
+            // Show current slide
+            slides[slideIndex].classList.add("active");
+            dots[slideIndex].classList.add("active");
+            
+            // Set timer for next slide
+            slideTimer = setTimeout(showSlides, 5000);
+        }
+        
+        function changeSlide(n) {
+            // Clear the current timer
+            clearTimeout(slideTimer);
+            
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                dots[i].classList.remove("active");
+            }
+            
+            // Calculate new slide index
+            slideIndex += n;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            
+            // Show new slide
+            slides[slideIndex].classList.add("active");
+            dots[slideIndex].classList.add("active");
+            
+            // Restart timer
+            slideTimer = setTimeout(showSlides, 5000);
+        }
+        
+        function currentSlide(n) {
+            // Clear the current timer
+            clearTimeout(slideTimer);
+            
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                dots[i].classList.remove("active");
+            }
+            
+            // Set slideIndex to selected dot
+            slideIndex = n;
+            
+            // Show selected slide
+            slides[slideIndex].classList.add("active");
+            dots[slideIndex].classList.add("active");
+            
+            // Restart timer
+            slideTimer = setTimeout(showSlides, 5000);
+        }
+    </script>
 </body>
 </html>
