@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Page Header -->
-    <header class="page-header">
-        <!-- Social Media Icons -->
+<!-- ====================== -->
+<!-- PAGE HEADER -->
+<!-- ====================== -->
+<header class="page-header">
+    <!-- Top Container (Social + Language Icons) -->
+    <div class="page-header--top-container">
+        <!-- Social Media Icons (Left) -->
         <div class="page-header--social-icons">
             <a href="#"><span class="icon-youtube-play"></span></a>
             <a href="#"><span class="icon-x-1"></span></a>
@@ -20,44 +24,43 @@
             <a href="#"><span class="icon-instagram"></span></a>
         </div>
         
-        <!-- Language Icons -->
+        <!-- Language Icons (Right) -->
         <div class="page-header--language-icons">
-            <a href="#"><img class="language-icon" src="components/images/en.svg" alt="English Language Icon"></a>
-            <a href="#"><img class="language-icon" src="components/images/ja.svg" alt="Japanese Language Icon"></a>
-            <a href="#"><img class="language-icon" src="components/images/es.svg" alt="Spanish Language Icon"></a>
-            <a href="#"><img class="language-icon" src="components/images/fr.svg" alt="French Language Icon"></a>
+            <a href="#"><img class="language-icon" src="components/images/en.svg" alt="English"></a>
+            <a href="#"><img class="language-icon" src="components/images/ja.svg" alt="Japanese"></a>
+            <a href="#"><img class="language-icon" src="components/images/es.svg" alt="Spanish"></a>
+            <a href="#"><img class="language-icon" src="components/images/fr.svg" alt="French"></a>
         </div>
-        
-        <!-- Orange Wordmark -->
-        <div class="page-header--wordmark">
-            <a href="/"><img src="components/images/orange-wordmark.png" alt="Orange Wordmark"></a>
-        </div>
-        
-        <!-- Cart Icon -->
-        <div class="page-header--cart-icon">
-            <a href="#"><span class="icon-basket-1"></span></a>
-        </div>
-        
-        <!-- Navigation Bar -->
-        <nav class="page-header--nav-bar">
-            <ul class="page-header--nav-bar-items">
-                <li class="nav-item"><a href="/gear">GEAR</a></li>
-                <li class="nav-item"><a href="/artists">ARTISTS</a></li>
-                <li class="nav-item"><a href="/history">HISTORY</a></li>
-                <li class="nav-item"><a href="/news">NEWS</a></li>
-                <li class="nav-item"><a href="/support">SUPPORT</a></li>
-                <li class="nav-item"><a href="/find-dealer">FIND DEALER</a></li>
-                <li class="nav-item"><a href="/store">STORE</a></li>
-                <li class="nav-item"><a href="/orange-essentials">ORANGE ESSENTIALS</a></li>
-                <li class="nav-item"><a href="/orange-learn">ORANGE LEARN</a></li>
-                <li class="nav-item search">
-                    <a href="/search" class="search-link">
-                        <i class="icon-search"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+    
+    <!-- Center Logo -->
+    <div class="page-header--wordmark">
+        <a href="/"><img src="components/images/orange-wordmark.png" alt="Orange Amplifiers"></a>
+    </div>
+    
+    <!-- Cart Icon -->
+    <div class="page-header--cart-icon">
+        <a href="#"><span class="icon-basket-1"></span></a>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="page-header--nav-bar">
+        <ul class="page-header--nav-bar-items">
+            <li class="nav-item"><a href="/gear">GEAR</a></li>
+            <li class="nav-item"><a href="/artists">ARTISTS</a></li>
+            <li class="nav-item"><a href="/history">HISTORY</a></li>
+            <li class="nav-item"><a href="/news">NEWS</a></li>
+            <li class="nav-item"><a href="/support">SUPPORT</a></li>
+            <li class="nav-item"><a href="/find-dealer">FIND DEALER</a></li>
+            <li class="nav-item"><a href="/store">STORE</a></li>
+            <li class="nav-item"><a href="/orange-essentials">ORANGE ESSENTIALS</a></li>
+            <li class="nav-item"><a href="/orange-learn">ORANGE LEARN</a></li>
+            <li class="nav-item search">
+                <a href="/search"><i class="icon-search"></i></a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
     <!-- Hero Slideshow Section -->
     <section class="hero-section">
@@ -459,6 +462,51 @@
         </div>
     </section>
 
+<!-- Footer Section -->
+<footer class="footer">
+    <!-- Footer Arrow Divider -->
+    <div class="footer-arrow-container">
+        <div class="footer--divider-arrow"></div>
+    </div>
+    
+    <div class="container footer-content">
+        <!-- Help with Gear Section -->
+        <div class="footer-section">
+            <h3 class="footer-list-heading">HELP WITH MY GEAR</h3>
+            <ul class="footer--link-list">
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Register Gear</a></li>
+                <li><a href="#">Gear Manuals</a></li>
+            </ul>
+        </div>
+
+        <!-- Sister Websites Section -->
+        <div class="footer-section">
+            <h3 class="footer-list-heading">SISTER WEBSITES</h3>
+            <ul class="footer--link-list">
+                <li><a href="#">Orange Essentials</a></li>
+                <li><a href="#">Orange Learn</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="footer-section newsletter-section">
+            <h3>Join our newsletter</h3>
+            <input type="email" class="email-input">
+            <p>Email confirmation is required</p>
+            <button class="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <!-- Copyright and Terms Section -->
+    <div class="footer--copyright-and-terms">
+        <div class="footer--copyright-terms-content">
+            <p class="footer--copyright">© Orange Amps | Products can change without notice</p>
+            <p class="footer--terms">Cookies & Terms</p>
+        </div>
+    </div>
+</footer>
+    
     <script>
         let slideIndex = 0;
         let slideTimer;
